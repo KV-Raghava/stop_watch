@@ -1,13 +1,21 @@
 
 let [hours,minutes,seconds] = [0,0,0];
 let time = document.getElementById('time');
+
+//start button
 let start = document.getElementById('start');
 start.addEventListener('click',timerStart);
+
+//pause button
 let pause = document.getElementById('pause');
 pause.addEventListener('click',timerStop);
+
+//reset button
 let reset = document.getElementById('reset');
 reset.addEventListener('click',timerReset);
+
 let index=null;
+
 function timer(){
     seconds++;
     if(seconds == 60) {
